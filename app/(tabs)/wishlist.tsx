@@ -6,11 +6,11 @@ import { XStack, YStack } from "tamagui";
 import Typography from "ui/typography";
 
 const Wishlist = () => {
-  const { top, bottom } = useSafeAreaInsets();
+  const { top } = useSafeAreaInsets();
   const { wishList, clearWishList } = useWishListState();
 
   return (
-    <YStack pt={top} pb={bottom} f={1} bg="white">
+    <YStack pt={top} f={1} bg="white">
       <XStack px="$16" my="$8" ai="center" jc="space-between">
         <Typography size="$25" bold>
           Wishlist

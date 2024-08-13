@@ -9,7 +9,7 @@ import { IProduct } from "types & schemas/product.types";
 import Typography from "ui/typography";
 
 const Products = () => {
-  const { top, bottom } = useSafeAreaInsets();
+  const { top } = useSafeAreaInsets();
 
   const {
     data: { pages: fetchedPages = [] } = {},
@@ -44,7 +44,7 @@ const Products = () => {
   const productsData = fetchedPages?.map((data) => data.products).flat();
 
   return (
-    <YStack pt={top} pb={bottom} f={1} bg="white">
+    <YStack pt={top} f={1} bg="white">
       <Typography size="$25" bold px="$16" my="$8">
         Products
       </Typography>
