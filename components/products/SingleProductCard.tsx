@@ -41,24 +41,32 @@ const SingleProductCard: FC<IProps> = (product) => {
 
           <XStack>
             {isProductInWishList(product.id) ? (
-              <MaterialCommunityIcons
+              <XStack
+                testID="wishlist-icon"
                 onPress={() => removeFromWishList(product.id)}
-                name="heart-multiple"
-                size={24}
-                color="red"
-              />
+              >
+                <MaterialCommunityIcons
+                  name="heart-multiple"
+                  size={24}
+                  color="red"
+                />
+              </XStack>
             ) : (
-              <MaterialCommunityIcons
-                name="heart-multiple-outline"
-                size={24}
-                color="black"
+              <XStack
+                testID="wishlist-icon"
                 onPress={() => addToWishList(product)}
-              />
+              >
+                <MaterialCommunityIcons
+                  name="heart-multiple-outline"
+                  size={24}
+                  color="black"
+                />
+              </XStack>
             )}
           </XStack>
         </XStack>
         <Typography mt="$4" size="$16" semiBold>
-          ${product.price}
+          {product.price} AED
         </Typography>
 
         <XStack

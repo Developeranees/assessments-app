@@ -218,7 +218,8 @@ const allThemes = addChildren(baseThemes, (name, theme) => {
     return addChildren({ alt1, alt2, active }, (_, subTheme) => {
       return getComponentThemes(
         subTheme,
-        subTheme === inverse ? theme : inverse
+        // subTheme === inverse ? theme : inverse
+        theme
       );
     });
   }
@@ -229,21 +230,30 @@ const allThemes = addChildren(baseThemes, (name, theme) => {
     const stronger1 = applyMask(theme, masks.stronger, maskOptions);
     const inverse1 = applyMask(inverse, masks.weaker, maskOptions);
     const inverse2 = applyMask(inverse1, masks.weaker, maskOptions);
-    const strongerBorderLighterBackground: SubTheme = isLight
-      ? {
-          ...stronger1,
-          borderColor: weaker1.borderColor,
-          borderColorHover: weaker1.borderColorHover,
-          borderColorPress: weaker1.borderColorPress,
-          borderColorFocus: weaker1.borderColorFocus,
-        }
-      : {
-          ...theme,
-          borderColor: weaker1.borderColor,
-          borderColorHover: weaker1.borderColorHover,
-          borderColorPress: weaker1.borderColorPress,
-          borderColorFocus: weaker1.borderColorFocus,
-        };
+    const strongerBorderLighterBackground: SubTheme = {
+      ...stronger1,
+      borderColor: weaker1.borderColor,
+      borderColorHover: weaker1.borderColorHover,
+      borderColorPress: weaker1.borderColorPress,
+      borderColorFocus: weaker1.borderColorFocus,
+    };
+
+    //   const strongerBorderLighterBackground: SubTheme = isLight
+    // ? {
+    //     ...stronger1,
+    //     borderColor: weaker1.borderColor,
+    //     borderColorHover: weaker1.borderColorHover,
+    //     borderColorPress: weaker1.borderColorPress,
+    //     borderColorFocus: weaker1.borderColorFocus,
+    //   }
+    // : {
+    //     ...theme,
+    //     borderColor: weaker1.borderColor,
+    //     borderColorHover: weaker1.borderColorHover,
+    //     borderColorPress: weaker1.borderColorPress,
+    //     borderColorFocus: weaker1.borderColorFocus,
+    //   };
+
     return {
       Card: weaker1,
       Button: weaker2,
