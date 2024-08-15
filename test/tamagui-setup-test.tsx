@@ -7,6 +7,7 @@ import {
 import { TamaguiProvider } from "tamagui";
 import config from "tamagui.config";
 import mockSafeAreaContext from "react-native-safe-area-context/jest/mock";
+import "@shopify/flash-list/jestSetup";
 
 jest.mock("react-native-safe-area-context", () => mockSafeAreaContext);
 

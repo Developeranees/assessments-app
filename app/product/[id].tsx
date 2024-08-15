@@ -43,6 +43,7 @@ const ViewSingleProduct = () => {
           size={28}
           color="black"
           onPress={() => router.back()}
+          testID="back-button"
         />
 
         <Typography mx="$8" semiBold f={1} ta="center">
@@ -51,6 +52,7 @@ const ViewSingleProduct = () => {
 
         {product?.id && isProductInWishList(product.id) ? (
           <MaterialCommunityIcons
+            testID="wishlist-button"
             onPress={() => removeFromWishList(product.id)}
             name="heart-multiple"
             size={28}
@@ -58,6 +60,7 @@ const ViewSingleProduct = () => {
           />
         ) : (
           <MaterialCommunityIcons
+            testID="wishlist-button"
             name="heart-multiple-outline"
             size={28}
             color="black"
@@ -73,6 +76,7 @@ const ViewSingleProduct = () => {
             contentFit="contain"
             priority="high"
             cachePolicy="memory-disk"
+            testID="product-thumbnail"
           />
         </YStack>
         <YStack py="$16">

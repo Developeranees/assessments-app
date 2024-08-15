@@ -49,6 +49,7 @@ const Products = () => {
         Products
       </Typography>
       <FlashList
+        testID="flash-list"
         estimatedItemSize={112}
         contentContainerStyle={{ paddingHorizontal: 16 }}
         keyExtractor={(item) => item.id.toString()}
@@ -58,7 +59,7 @@ const Products = () => {
         ListEmptyComponent={
           isLoading ? (
             <XStack p="$8" w="100%" ai="center" jc="center">
-              <Spinner size="small" />
+              <Spinner testID="loading-spinner" size="small" />
             </XStack>
           ) : (
             <XStack p="$8" w="100%" ai="center" jc="center">
@@ -70,7 +71,9 @@ const Products = () => {
         onEndReachedThreshold={0.5}
         ListFooterComponent={
           <XStack p="$8" w="100%" ai="center" jc="center">
-            {isFetchingNextPage && <Spinner size="small" />}
+            {isFetchingNextPage && (
+              <Spinner testID="fetching-spinner" size="small" />
+            )}
             {!isFetchingNextPage && !hasNextPage && !isLoading && (
               <Typography>No more data</Typography>
             )}

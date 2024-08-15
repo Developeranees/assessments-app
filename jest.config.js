@@ -30,9 +30,9 @@ module.exports = {
     "!**/.expo/**",
     "!**/jest.config.js",
     "!**/test/**",
-    "!**/app/**",
     "!**types & schemas/**",
     "!**/assets/**",
+    "!**/_layout.tsx",
   ],
 
   // The directory where Jest should output its coverage files
