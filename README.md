@@ -1,4 +1,4 @@
-<img width="432" alt="Screenshot 2024-08-15 at 12 49 22 PM" src="https://github.com/user-attachments/assets/ee27ced3-c5b6-404c-8560-1474a7883494"># Assessment App
+# Assessment App
 
 Requirements:
 If you want to run this app on your system you first need to setup the system enviroment for android and ios. For system enviroment guide goto  [Set up your environment](https://docs.expo.dev/get-started/set-up-your-environment/?mode=development-build)
