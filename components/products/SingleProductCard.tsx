@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, memo } from "react";
 import { Separator, XStack, YStack } from "tamagui";
 import { Image } from "expo-image";
 import Typography from "ui/typography";
@@ -25,7 +25,7 @@ const SingleProductCard: FC<IProps> = (product) => {
       <YStack h="$80" w="$80">
         <Image
           priority="high"
-          cachePolicy="memory-disk"
+          cachePolicy="disk"
           alt={product.title}
           source={product.thumbnail}
           style={{ flex: 1 }}
@@ -86,4 +86,4 @@ const SingleProductCard: FC<IProps> = (product) => {
   );
 };
 
-export default SingleProductCard;
+export default memo(SingleProductCard);

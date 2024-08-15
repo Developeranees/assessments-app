@@ -75,7 +75,7 @@ const ViewSingleProduct = () => {
             style={{ flex: 1 }}
             contentFit="contain"
             priority="high"
-            cachePolicy="memory-disk"
+            cachePolicy="disk"
             testID="product-thumbnail"
           />
         </YStack>
