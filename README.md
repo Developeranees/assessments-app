@@ -24,9 +24,6 @@ Creating Production Build:
 1. for android production build follow this [Create a production build for Android](https://docs.expo.dev/tutorial/eas/android-production-build/)
 2. for ios production build follow this [Create a production build for iOS](https://docs.expo.dev/tutorial/eas/ios-production-build/)
 
-Application Video:
-
-
 Application Images: 
 ![simulator_screenshot_7EAC5628-D3AC-4490-9CDB-3CA9CAA7B0B6](https://github.com/user-attachments/assets/fa5fb117-3564-4efb-b938-46d0c782fb84)
 ![simulator_screenshot_3FBC31E9-C43D-433A-B4FF-3FD9B53FEA78](https://github.com/user-attachments/assets/0a023445-7f84-4dfa-b899-2ce66ed1af47)
