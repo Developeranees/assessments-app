@@ -1,15 +1,15 @@
-# Abwab App
+# Assessment App
 
 Requirements:
 
-1. `"react-native": "0.73.2"`
-2. `Node Version: v20.11.0`
+1. `"react-native": "0.74.5"`
+2. `Node Version: v20.12.2`
 
 Installation:
 
 Follow the following steps to install the project after cloning it successfully to your system.
 
-1. `npm install`
+1. `yarn`
 
 Running:
 

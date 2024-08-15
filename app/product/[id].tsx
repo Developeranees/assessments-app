@@ -77,6 +77,10 @@ const ViewSingleProduct = () => {
             priority="high"
             cachePolicy="disk"
             testID="product-thumbnail"
+            placeholder={{
+              blurhash:
+                "e4T9L#~q_39FWB_3RjIU%Mt7_3IUD%?bj[t7of%MRjIUIUxuxuD%xu",
+            }}
           />
         </YStack>
         <YStack py="$16">

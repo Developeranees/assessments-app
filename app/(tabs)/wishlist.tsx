@@ -28,7 +28,10 @@ const Wishlist = () => {
       </XStack>
       <FlashList
         estimatedItemSize={112}
-        contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: 16 }}
+        contentContainerStyle={{
+          paddingHorizontal: 16,
+          paddingBottom: 32 + 48,
+        }}
         keyExtractor={(item) => item.id.toString()}
         data={wishList}
         renderItem={({ item }) => <SingleProductCard {...item} />}

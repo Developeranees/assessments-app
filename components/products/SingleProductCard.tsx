@@ -30,6 +30,10 @@ const SingleProductCard: FC<IProps> = (product) => {
           source={product.thumbnail}
           style={{ flex: 1 }}
           contentFit="cover"
+          recyclingKey={product.thumbnail}
+          placeholder={{
+            blurhash: "e4T9L#~q_39FWB_3RjIU%Mt7_3IUD%?bj[t7of%MRjIUIUxuxuD%xu",
+          }}
         />
       </YStack>
       <Separator mx="$16" vertical boc="$gray/300" />
