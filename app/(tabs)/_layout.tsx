@@ -18,6 +18,9 @@ export default function TabLayout() {
           left: Dimensions.get("screen").width / 2 - 90,
         },
         headerShown: false,
+        tabBarItemStyle: {
+          height: 48,
+        },
       }}
     >
       <Tabs.Screen
